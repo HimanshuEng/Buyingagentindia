@@ -1,0 +1,415 @@
+/* Page base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+}
+
+
+/* NAVBAR */
+.navbar-brand {
+    font-size: 22px;
+    color: #000000;
+}
+
+.navbar-brand span {
+    color: #2f6fed;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+}
+/* Layout & Positioning */
+.profile-dropdown {
+    position: relative;
+    padding-bottom: 10px; /* Bridge the gap so the menu doesn't close when moving mouse down */
+}
+
+.icon-trigger {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+}
+
+/* The Popover Box */
+.dropdown-popover {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    width: 500px;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+/* Show on Hover */
+.profile-dropdown:hover .dropdown-popover {
+    display: block;
+}
+
+.popover-content {
+    display: flex;
+    padding: 20px;
+}
+
+.popover-column {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.vertical-divider {
+    width: 1px;
+    background-color: #eee;
+    margin: 0 10px;
+}
+
+/* Typography & Buttons */
+.popover-content h6 {
+    font-weight: 700;
+    color: #333;
+}
+
+.popover-content p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: 5px;
+}
+
+.btn-orange {
+    background-color: #ff7612;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-blue {
+    background-color: #1a73e8;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-orange:hover, .btn-blue:hover {
+    opacity: 0.9;
+    color: white;
+}
+/* HERO */
+#hero {
+    background: #eef2f5;
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+#hero h1 span {
+    color: #000000;
+}
+
+#hero p {
+    font-size: 18px;
+    color: #6c757d;
+    margin-top: 15px;
+}
+
+/* SEARCH BOX */
+
+.search-box {
+    margin: 40px auto;
+    max-width: 700px;
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 15px;
+    color: gray;
+
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.search-box button {
+    background: #ff7a00;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* SELLER */
+.seller-text {
+    margin-top: 20px;
+}
+
+.seller-text a {
+    color: #2f6fed;
+    text-decoration: none;
+}
+
+/* TRUST */
+.trust {
+    padding: 20px;
+    font-size: 13px;
+    color: gray;
+    background: #f8f9fa;
+}
+
+/* ai section */
+.ai-section {
+    padding: 80px 20px;
+    background: #f5f7fa;
+}
+
+.main-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1a1a1a;
+    ;
+}
+
+.sub-text {
+    max-width: 700px;
+    margin: 15px auto;
+    color: #6c757d;
+    font-size: 17px;
+}
+
+/* Icon Circle */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: #e6f0ff;
+    color: #2f6fed;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 24px;
+}
+
+/* B2B SECTION */
+.b2b-section {
+    padding: 80px 20px;
+    background: #ffffff;
+}
+
+
+.b2b-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    height: 100%;
+    text-align: left;
+}
+
+.b2b-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.b2b-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #6c757d;
+    font-size: 15px;
+}
+
+.card-content a {
+    color: #2f6fed;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* industry section */
+.industries-section {
+    padding: 80px 20px;
+}
+
+.industries-section h1 {
+    font-weight: 700px;
+    font-size: 40px;
+    color: 1a1a1a;
+}
+
+.industries-section p {
+    max-width: 700px;
+    margin: 15px auto;
+    color: #6c757d;
+    font-size: 17px;
+}
+
+/* CARD */
+.category-card {
+    width: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* border: 2px solid #222; */
+    background: #fff;
+    transition: 0.3s;
+}
+
+/* Hover */
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+.card-img {
+    position: relative;
+    object-fit: cover;
+}
+
+.card-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.overlay-title {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.card-body {
+    padding: 15px;
+}
+
+
+.desc {
+    color: #6c757d;
+    font-size: 15px;
+}
+
+
+.info {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* TAGS */
+.tags {
+    margin-top: 10px;
+}
+
+.tags span {
+    background: #e6f0ff;
+    color: #2f6fed;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+/* SECTION */
+.trusted-section {
+    background: #f5f7fa;
+    padding: 60px 20px;
+}
+
+/* TITLE */
+.trusted-title {
+    color: #6c757d;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* LOGOS */
+.logo {
+    max-width: 120px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.logo:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* FOOTER STYLES */
+.footer {
+    font-size: 15px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    color: #666;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-links li a:hover {
+    color: #2f6fed; /* Transitions to your brand blue */
+    padding-left: 5px;
+}
+
+/* Social Icon placeholders */
+.social-icon {
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    background: #f8f9fa;
+    border-color: #2f6fed;
+}
+
+.social-icon span {
+    color: #2f6fed;
+}
+
+.footer {
+    margin-top: auto;
+}
+
